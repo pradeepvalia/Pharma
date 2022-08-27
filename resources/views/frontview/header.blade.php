@@ -27,16 +27,24 @@
                                                                 src="assets/images/logo.png"></a></li>
                                                     <li class="level0 home">
                                                         <a class="level-top"
-                                                            href="{{ route('frontview.home') }}"><span
+                                                            href="#"><span
                                                                 class="icon-home fa fa-home"></span><span
                                                                 class="icon-text">Home</span></a>
 
                                                     </li>
-                                                    <li class='level0 home'>
+                                                    <li class="level0 home">
+                                                        <a class="level-top"><span class="icon-home fa fa-home"></span><span class="icon-text">PRODUCT'S</span></a>
+                                                        <div class="level-top-mega">
+
+                                                            <div><a href="index.html"><span class="demo-home"></span></a></div>
+
+                                                        </div>
+                                                    </li>
+                                                    <li class="level0 home">
                                                         <a class="level-top"
-                                                            href="{{ route('frontview.slider') }}"><span
-                                                                class="icon-text">T-SHIRT</span><span
-                                                                class="boder-menu"></span></a>
+                                                            href="#"><span
+                                                                class="icon-home fa fa-home"></span><span
+                                                                class="icon-text">ABOUT US</span></a>
 
                                                     </li>
                                                 </ul>
@@ -91,16 +99,6 @@
 
 
                                                     </li>
-                                                    <li class="nav-item dropdown">
-                                                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="{{ url('/showOrder') }}"
-                                                            role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false" v-pre>
-                                                            my Order
-                                                        </a>
-
-
-                                                    </li>
-
 
                                                     <li class="nav-item has-treeview menu-open">
                                                         <a class="nav-link " href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -119,78 +117,6 @@
                                     <!--- .top-links-alo -->
                                 </div>
                                 <!--- .dropdown-switcher -->
-                            </div>
-                            <!--- .settting-switcher -->
-                        </div>
-                        <!--- .header-setting -->
-                        <div class="miniCartWrap">
-                            <div class="mini-maincart">
-                                <div class="cartSummary">
-                                    <div class="crat-icon">
-                                        <span class="icon-handbag icons"></span>
-                                        <p class="mt-cart-title">My Cart</p>
-                                    </div>
-                                    <div class="cart-header">
-                                        <span class="zero">0 </span>
-                                        <p class="cart-tolatl">
-                                            <span class="toltal">Total:</span>
-                                            <span><span class="price">$0.00</span></span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!--- .cartSummary -->
-                                <div class="mini-contentCart" style="display: none">
-                                    <div class="block-content">
-
-                                        <p class="block-subtitle">Recently added item(s)</p>
-                                        @php $total = 0;  @endphp
-                                        @foreach ($cartitems->slice(0, 3) as $item)
-                                            <ol id="cart-sidebar" class="mini-products-list clearfix">
-                                                <li class="item clearfix">
-                                                    <div class="cart-content-top">
-                                                        <a href="{{ $item->product->name }}"
-                                                            title="{{ $item->product->name }}">
-                                                            <img src="{{ url('uploads/products/' . $item->product->image) }}"
-                                                                width="70" />
-                                                        </a> &nbsp;
-
-                                                        <div class="product-details">
-                                                            <p class="product-name">
-                                                                <a href="{{ $item->product->name }}"
-                                                                    title="{{ $item->product->name }}">{{ $item->product->name }}</a>
-                                                            </p>
-                                                            <strong>{{ $item->qty }} * </strong> <span
-                                                                class="price">₹{{ $item->product->price * $item->qty }}/-</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ol>
-                                            @php
-                                                $total += $item->product->price * $item->qty;
-                                            @endphp
-                                        @endforeach
-                                        <p class="subtotal"> <span class="label">Subtotal:</span>
-                                            <span class="price">₹{{ $total }}/-</span>
-                                        </p>
-
-                                        <div class="actions"> <a href="{{ url('/mycart') }}"
-                                                class="view-cart"> View cart </a>
-
-                                        </div>
-                                    </div>
-                                    </div>
-                                <!--- .mini-contentCart -->
-                            </div>
-                            <!--- .mini-maincart -->
-                        </div>
-                        <!--- .miniCartWrap -->
-                        <div class="header-setting hidden-sm hidden-xs">
-                            <div class="settting-switcher">
-                                <div class="dropdown-toggle">
-                                    <div class="icon-setting">
-                                    </div>
-                                </div>
                             </div>
                             <!--- .settting-switcher -->
                         </div>

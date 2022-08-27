@@ -26,7 +26,7 @@
                                         <h2 class="caption3">When you buy from 2 or more...</h2>
                                         <p class="icon-anchor icons caption6"><span class="hidden">hidden</span>
                                         </p>
-                                        <a href="{{ route('frontview.slider') }}" class="btn-shop caption4">Shop
+                                        <a href="#" class="btn-shop caption4">Shop
                                             Now</a>
                                     </div>
                                 </div>
@@ -41,7 +41,7 @@
                                         <h3 class="caption2">looks</h3>
                                         <h2 class="caption3">Summer</h2>
                                         <h2 class="caption5">2022</h2>
-                                        <h3 class="caption4"><a href="{{ route('frontview.slider') }}"
+                                        <h3 class="caption4"><a href="#"
                                                 class="btn-shop">Shop Now</a></h3>
                                     </div>
                                 </div>
@@ -54,7 +54,7 @@
                                     <div class="text-slide text-slide3">
                                         <h3 class="caption1">Mid-Season</h3>
                                         <h3 class="caption2">Must have for Student 2022</h3>
-                                        <h3 class="caption4"><a href="{{ route('frontview.slider') }}"
+                                        <h3 class="caption4"><a href="#"
                                                 class="btn-shop">Shop Now</a></h3>
                                     </div>
                                 </div>
